@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+	<title>!! Star Service !!</title>
+	<style>
+		@font-face{
+			font-family: spaceage;
+			src: url("fonts/spaceage.ttf");
+		}
+
+		@keyframes one{
+			0% 		{top:0px; left:0px}
+			25% 	{top:3px; left:0px}
+			50% 	{top:7px; left:0px}
+			75% 	{top:3px; left:0px}
+			100% 	{top:0px; left:0px}
+		}
+		
+		@keyframes two{
+			0% 		{top:0px; left:0px}
+			25% 	{top:-8px; left:0px}
+			50% 	{top:-8px; left:-8px}
+			75% 	{top:0px; left:-8px}
+			100% 	{top:0px; left:0px}
+		}
+
+		body{
+			background-color: black;
+			overflow: hidden;
+		}
+
+		.title{
+			font-family: spaceage;
+			color: white;
+			position: relative;
+			font-size: 10vw;
+			text-align: center;
+			width: 100%;
+			display: inline-block;
+		}
+
+		.chariot{
+			position:absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+		}
+		
+	</style>	
+</head>
+<body>
+	<img class="chariot" src="i/bg.jpg">
+	<img class="chariot" src="i/carback.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
+	<img class="chariot" src="i/dudes.png" 		style="animation-name:one;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
+	<img class="chariot" src="i/carfront.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
+	
+	<span class="title">STAR SERVICE</span>
+</body>
+</html>
