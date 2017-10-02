@@ -27,6 +27,34 @@
 			background-image: url('i/starsbg.png');
 			overflow: hidden;
 		}
+		
+		.chunk{
+			display: block;
+		}
+		
+		
+		@media all and (min-width: 960px) {
+		.bio{
+			font-size: 30px;
+		  }
+		}
+
+		@media all and (max-width: 959px) and (min-width: 600px) {
+		.bio{
+			font-size: 5vw;
+		  }
+		}
+
+		@media all and (max-width: 599px) and (min-width: 50px) {
+		.bio{
+			font-size: 6vw;
+		  }
+		}
+		
+		.bio{
+			font-family: spaceage;
+			color: white;
+		}
 
 		.title{
 			font-family: spaceage;
@@ -48,11 +76,18 @@
 	</style>	
 </head>
 <body>
-	<img class="chariot" src="i/bg.jpg">
-	<img class="chariot" src="i/carback.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
-	<img class="chariot" src="i/dudes.png" 		style="animation-name:one;animation-duration:4s; animation-iteration-count: infinite;animation-timing-function: linear;">
-	<img class="chariot" src="i/carfront.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
+	<div class="chunk">
+		<img class="chariot" src="i/bg.jpg"			style="z-index:-1">
+		<img class="chariot" src="i/carback.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
+		<img class="chariot" src="i/dudes.png" 		style="animation-name:one;animation-duration:4s; animation-iteration-count: infinite;animation-timing-function: linear;">
+		<img class="chariot" src="i/carfront.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
 	
-	<span class="title">STAR SERVICE</span>
+		<span class="title">STAR SERVICE</span>
+	</div>
+	<div class="chunk bio">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec augue eget quam finibus cursus a vel sapien. Sed sit amet eros eu erat condimentum auctor non ut velit. Nulla in dolor varius, laoreet nulla ut, congue velit. Praesent ultricies fermentum eros. Duis semper odio nec dignissim interdum. Praesent bibendum sit amet eros vel tempus. Cras ac nunc id erat aliquam bibendum eu quis erat. Curabitur ut dui odio. Phasellus sed maximus urna, id placerat nisl. Aenean maximus scelerisque ipsum a hendrerit. Aliquam placerat tempus sem sit amet aliquam.
+		<br><br>
+		Duis aliquet, ex a rhoncus ornare, mi dolor tincidunt dui, vitae lobortis augue turpis sed ipsum. Ut quis sagittis dolor, sed blandit mi. Aliquam hendrerit, dui ut sodales facilisis, elit massa tempus augue, non congue quam risus vel odio. Ut sodales massa elit, ac maximus nunc dapibus vitae. Phasellus quis odio rhoncus, sagittis urna sed, posuere justo. Praesent cursus pulvinar nunc nec ornare. Donec aliquam scelerisque lacus, eu lobortis sapien. Pellentesque libero urna, finibus id gravida vitae, finibus eget orci.
+	</div>
 </body>
 </html>
