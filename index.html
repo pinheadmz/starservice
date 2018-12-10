@@ -83,6 +83,17 @@
 			transition: transform .2s;
 			transform: scale(1.2);
 		}
+
+		.EP {
+			color: white;
+	    font-family: monospace;
+	    font-size: 2.5vw;
+	    text-decoration: none;
+	    /* position: absolute; */
+	    left: 20vw;
+	    top: 12vw;
+	    font-weight: bold;
+		}
 		
 		@media all and (min-width: 980px) {
 			.bio{
@@ -91,13 +102,16 @@
 		}
 
 		@media all and (max-width: 979px) and (min-width: 600px) {
+			.EP {
+				font-size: 3vw;
+			}
 			.bio{
 				font-size: 5vw;
 				padding-top: 15vw;
 			  }
 			.social{
 				width: 100%;
-				top: 46vw;
+				top: 50vw;
 			}
 			.social img{
 				width: 13vw;
@@ -105,13 +119,16 @@
 		}
 
 		@media all and (max-width: 599px) and (min-width: 50px) {
+			.EP {
+				font-size: 3vw;
+			}
 			.bio{
 				font-size: 6vw;
 				padding-top: 15vw;
 			}
 			.social{
 				width: 100%;
-				top: 46vw;
+				top: 50vw;
 			}
 			.social img{
 				width: 12vw;
@@ -120,13 +137,13 @@
 	</style>	
 </head>
 <body>
-	<div class="chunk"								style="overflow: hidden;">
-		<img class="chariot" src="i/bg.jpg"			style="z-index:-1">
-		<img class="chariot" src="i/carback.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
-		<img class="chariot" src="i/dudes.png" 		style="animation-name:one;animation-duration:4s; animation-iteration-count: infinite;animation-timing-function: linear;">
-		<img class="chariot" src="i/carfront.png"	style="animation-name:two;animation-duration:2s; animation-iteration-count: infinite;animation-timing-function: linear;">
-	
+	<div class="chunk" style="overflow: hidden; text-align:center">
 		<span class="title">STAR SERVICE</span>
+		<img class="chariot" src="i/bg.jpg" style="z-index:-1">
+		<a href="https://starservice.bandcamp.com">
+			<span class='EP'>Artifacts From Earth<br>Our first EP! Out now on Perfect Location Records!</span>
+			<img src="i/AFE_cover.jpg"	style="height:90%">
+		</a>
 	</div>
 	<div class="social">
 		<a href="https://www.facebook.com/starservicesf/"><img src="i/social/Facebook.png"></a>
